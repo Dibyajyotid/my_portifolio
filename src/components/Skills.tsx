@@ -18,30 +18,30 @@ export default function Skills() {
       icon: <Server className="h-10 w-10 text-primary" />,
       technologies: ["Node.js", "Express", "Python", "Java"],
     },
-    {
-      title: "UI/UX Design",
-      description: "Designing beautiful and intuitive user experiences that delight users.",
-      icon: <Palette className="h-10 w-10 text-primary" />,
-      technologies: ["Figma", "Adobe XD", "Sketch", "Photoshop"],
-    },
+    // {
+    //   title: "UI/UX Design",
+    //   description: "Designing beautiful and intuitive user experiences that delight users.",
+    //   icon: <Palette className="h-10 w-10 text-primary" />,
+    //   technologies: ["Figma", "Adobe XD", "Sketch", "Photoshop"],
+    // },
     {
       title: "Database Management",
       description: "Designing and optimizing database structures for efficient data storage and retrieval.",
       icon: <Database className="h-10 w-10 text-primary" />,
       technologies: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
     },
-    {
-      title: "Mobile Development",
-      description: "Creating cross-platform mobile applications with modern frameworks.",
-      icon: <Smartphone className="h-10 w-10 text-primary" />,
-      technologies: ["React Native", "Flutter", "Swift", "Kotlin"],
-    },
-    {
-      title: "DevOps",
-      description: "Automating and optimizing the development and deployment process.",
-      icon: <Code2 className="h-10 w-10 text-primary" />,
-      technologies: ["Docker", "AWS", "CI/CD", "Kubernetes"],
-    },
+    // {
+    //   title: "Mobile Development",
+    //   description: "Creating cross-platform mobile applications with modern frameworks.",
+    //   icon: <Smartphone className="h-10 w-10 text-primary" />,
+    //   technologies: ["React Native", "Flutter", "Swift", "Kotlin"],
+    // },
+    // {
+    //   title: "DevOps",
+    //   description: "Automating and optimizing the development and deployment process.",
+    //   icon: <Code2 className="h-10 w-10 text-primary" />,
+    //   technologies: ["Docker", "AWS", "CI/CD", "Kubernetes"],
+    // },
   ]
 
   return (

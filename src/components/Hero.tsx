@@ -20,7 +20,7 @@ export default function Hero() {
             Hi, I'm <span className="font-extrabold">Dibyajyoti Das</span>
           </h1>
           <p className="mt-6 text-xl text-muted-foreground">
-            A passionate full-stack & backend developer creating beautiful, functional, and user-friendly web experiences.
+            A passionate backend developer creating beautiful, functional, and user-friendly web experiences.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" className="rounded-full px-8">

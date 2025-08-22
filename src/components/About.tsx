@@ -1,12 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
   return (
-    <section id="about" className="relative bg-muted/50 py-24 dark:bg-muted/10 md:py-32">
+    <section
+      id="about"
+      className="relative bg-muted/50 py-24 dark:bg-muted/10 md:py-32"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +18,9 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Me</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            About Me
+          </h2>
           <div className="mt-4 h-1 w-20 bg-primary mx-auto rounded-full"></div>
         </motion.div>
 
@@ -28,7 +33,7 @@ export default function About() {
             className="relative aspect-square overflow-hidden rounded-2xl"
           >
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/profile/avatar.png"
               alt="Profile"
               width={600}
               height={600}
@@ -43,28 +48,40 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-bold">Passionate Developer & Designer</h3>
+            <h3 className="text-2xl font-bold">
+              Passionate Developer & Designer
+            </h3>
             <p className="text-muted-foreground">
-              I'm a full-stack & backend developer with a passion for creating beautiful, functional, and user-friendly web
-              experiences. I've worked on a variety of projects from
-              small business websites to large enterprise applications.
+              I am a passionate backend developer with a strong foundation in
+              building scalable and efficient web applications. I have hands-on
+              experience with Node.js, Express, MongoDB, and PostgreSQL, and I
+              enjoy creating clean and maintainable code. As a recent graduate,
+              I am eager to contribute to projects where I can learn, grow, and
+              make a meaningful impact in backend development.
             </p>
             <p className="text-muted-foreground">
-              My expertise includes React, Next.js, Node.js, and modern UI frameworks like Tailwind CSS. I'm constantly
-              learning and exploring new technologies to stay at the forefront of web development.
+              I am a fresher passionate about web development. I have experience
+              with React, Next.js, Node.js, and modern UI frameworks like
+              Tailwind CSS. I enjoy building clean and functional applications
+              and am always eager to learn and explore new technologies to grow
+              as a developer.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
               <Card>
                 <CardContent className="p-4 text-center">
-                  <h4 className="text-4xl font-bold text-primary">0</h4>
-                  <p className="mt-2 text-sm text-muted-foreground">Years Experience</p>
+                  <h4 className="text-4xl font-bold text-primary">0.5</h4>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Years Experience
+                  </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="p-4 text-center">
-                  <h4 className="text-4xl font-bold text-primary">10+</h4>
-                  <p className="mt-2 text-sm text-muted-foreground">Projects Completed</p>
+                  <h4 className="text-4xl font-bold text-primary">4</h4>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Projects Completed
+                  </p>
                 </CardContent>
               </Card>
             </div>
@@ -72,5 +89,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

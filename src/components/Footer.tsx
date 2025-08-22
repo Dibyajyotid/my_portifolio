@@ -17,28 +17,28 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <Link
-              href="#"
+              href="https://github.com/Dibyajyotid"
               className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               aria-label="Twitter"
             >
               <Twitter className="h-5 w-5" />
-            </Link>
+            </Link> */}
             <Link
-              href="#"
+              href="www.linkedin.com/in/dibyajyoti-das-2332a5260"
               className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </Link>
             <Link
-              href="mailto:hello@example.com"
+              href="mailto:dibyajyotid358@gmail.com"
               className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               aria-label="Email"
             >
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} Your Name. All rights reserved. Built with Next.js and Tailwind CSS.</p>
+          <p>&copy; {currentYear} Dibyajyoti Das. All rights reserved. Built with Next.js and Tailwind CSS.</p>
         </div>
       </div>
     </footer>

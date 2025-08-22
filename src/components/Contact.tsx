@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent } from "@/components/ui/card"
-import { Mail, MapPin, Phone } from "lucide-react"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,41 +16,43 @@ export default function Contact() {
     email: "",
     subject: "",
     message: "",
-  })
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission - would connect to a backend service
-    console.log(formData)
-    alert("Thank you for your message! I'll get back to you soon.")
-    setFormData({ name: "", email: "", subject: "", message: "" })
-  }
+    console.log(formData);
+    alert("Thank you for your message! I'll get back to you soon.");
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  };
 
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      value: "hello@example.com",
-      link: "mailto:hello@example.com",
+      value: "dibyajyotid358@gmail.com",
+      link: "mailto:dibyajyotid358@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+91 6002541430",
+      link: "tel:+916002541430",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Jorhat, Assam, India",
       link: "#",
     },
-  ]
+  ];
 
   return (
     <section id="contact" className="py-24 md:py-32">
@@ -62,7 +64,9 @@ export default function Contact() {
           viewport={{ once: true, margin: "-100px" }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Get In Touch</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Get In Touch
+          </h2>
           <div className="mt-4 h-1 w-20 bg-primary mx-auto rounded-full"></div>
           <p className="mt-6 text-lg text-muted-foreground">
             Have a project in mind or want to chat? Feel free to reach out!
@@ -84,7 +88,10 @@ export default function Contact() {
                     {info.icon}
                   </div>
                   <h3 className="mb-2 text-lg font-bold">{info.title}</h3>
-                  <a href={info.link} className="text-muted-foreground transition-colors hover:text-primary">
+                  <a
+                    href={info.link}
+                    className="text-muted-foreground transition-colors hover:text-primary"
+                  >
                     {info.value}
                   </a>
                 </CardContent>
@@ -180,5 +187,5 @@ export default function Contact() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
