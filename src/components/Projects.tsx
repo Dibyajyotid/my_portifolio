@@ -1,35 +1,55 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ExternalLink, Github } from "lucide-react"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Github } from "lucide-react";
 
 export default function Projects() {
   const projects = [
     {
-      title: "E-commerce Platform",
+      title: "Real-Time Chat Application",
       description:
-        "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Next.js", "Tailwind CSS", "Stripe", "MongoDB"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A real-time chat application built with React, Node.js, and Socket.io, allowing users to send and receive messages instantly.",
+      image: "/realTimeChatApp/1.png",
+      tags: [
+        "React.js",
+        "Tailwind CSS",
+        "Express.js",
+        "MongoDB",
+        "Socket.io",
+        "Node.js",
+      ],
+      liveUrl: "https://real-time-chat-app-project.onrender.com",
+      githubUrl:
+        "https://github.com/Dibyajyotid/Real-time-chat-app-project.git",
     },
     {
-      title: "Task Management App",
+      title: "StayFinder",
       description:
-        "A collaborative task management application with real-time updates and team collaboration features.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Node.js", "Socket.io", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "The goal was to create an Airbnb-style platform where users can list and book properties with features like authentication, bookings, image uploads, and more.",
+      image: "/stayFinder/homepage.png",
+      tags: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Typescript",
+        "Tailwind CSS",
+        "Express.js",
+        "Cloudinary",
+        "Stripe",
+        "Shadcn UI",
+        "REST API",
+      ],
+      liveUrl: "https://stay-finder-client-one.vercel.app/",
+      githubUrl: "https://github.com/Dibyajyotid/StayFinder.git",
     },
     {
       title: "Portfolio Website",
-      description: "A modern portfolio website showcasing projects and skills with a clean, responsive design.",
+      description:
+        "A modern portfolio website showcasing projects and skills with a clean, responsive design.",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
       liveUrl: "#",
@@ -37,16 +57,20 @@ export default function Projects() {
     },
     {
       title: "IoT Dashboard",
-      description: "A real-time IoT monitoring dashboard that displays sensor data including temperature, humidity, pressure, CO2 levels, and motion detection. Features interactive charts, alert notifications, and a responsive design with dark mode support.",
+      description:
+        "A real-time IoT monitoring dashboard that displays sensor data including temperature, humidity, pressure, CO2 levels, and motion detection. Features interactive charts, alert notifications, and a responsive design with dark mode support.",
       image: "/IotDashboard/1.png",
       tags: ["HTML", "CSS", "Node.Js", "Javascript"],
       liveUrl: "https://iotdashboard-cpea.onrender.com",
       githubUrl: "https://github.com/Dibyajyotid/IOTDashboard.git",
     },
-  ]
+  ];
 
   return (
-    <section id="projects" className="relative bg-muted/50 py-24 dark:bg-muted/10 md:py-32">
+    <section
+      id="projects"
+      className="relative bg-muted/50 py-24 dark:bg-muted/10 md:py-32"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,10 +79,13 @@ export default function Projects() {
           viewport={{ once: true, margin: "-100px" }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">My Projects</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            My Projects
+          </h2>
           <div className="mt-4 h-1 w-20 bg-primary mx-auto rounded-full"></div>
           <p className="mt-6 text-lg text-muted-foreground">
-            Here are some of my recent projects that showcase my skills and expertise
+            Here are some of my recent projects that showcase my skills and
+            expertise
           </p>
         </motion.div>
 
@@ -83,23 +110,36 @@ export default function Projects() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="mb-2 text-xl font-bold">{project.title}</h3>
-                  <p className="mb-4 text-muted-foreground">{project.description}</p>
+                  <p className="mb-4 text-muted-foreground">
+                    {project.description}
+                  </p>
                   <div className="mb-6 flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="rounded-full bg-secondary px-3 py-1 text-xs font-medium">
+                      <span
+                        key={tag}
+                        className="rounded-full bg-secondary px-3 py-1 text-xs font-medium"
+                      >
                         {tag}
                       </span>
                     ))}
                   </div>
                   <div className="flex gap-4">
                     <Button asChild variant="outline" size="sm">
-                      <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Github className="mr-2 h-4 w-4" />
                         Code
                       </Link>
                     </Button>
                     <Button asChild size="sm">
-                      <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
                       </Link>
@@ -118,5 +158,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
