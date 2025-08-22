@@ -50,10 +50,10 @@ export default function Projects() {
       title: "Portfolio Website",
       description:
         "A modern portfolio website showcasing projects and skills with a clean, responsive design.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/portifolio/portifolio.png",
       tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://portifolio-five-theta-37.vercel.app/",
+      githubUrl: "https://github.com/Dibyajyotid/my_portifolio.git",
     },
     {
       title: "IoT Dashboard",
