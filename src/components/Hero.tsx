@@ -17,7 +17,7 @@ export default function Hero() {
           className="mx-auto max-w-3xl"
         >
           <h1 className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl">
-            Hi, I'm <span className="font-extrabold">Dibyajyoti Das</span>
+            Hi, I&apos;m <span className="font-extrabold">Dibyajyoti Das</span>
           </h1>
           <p className="mt-6 text-xl text-muted-foreground">
             A passionate backend developer creating beautiful, functional, and user-friendly web experiences.

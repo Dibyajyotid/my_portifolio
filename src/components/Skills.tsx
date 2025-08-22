@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { Code2, Database, Layout, Palette, Server, Smartphone } from "lucide-react"
+import {  Database, Layout, Server} from "lucide-react"
 
 export default function Skills() {
   const skills = [
@@ -57,7 +57,7 @@ export default function Skills() {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">My Skills</h2>
           <div className="mt-4 h-1 w-20 bg-primary mx-auto rounded-full"></div>
           <p className="mt-6 text-lg text-muted-foreground">
-            Here are some of the technologies and skills I've worked with
+            Here are some of the technologies and skills I&apos;ve worked with
           </p>
         </motion.div>
 

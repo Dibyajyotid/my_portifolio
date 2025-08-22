@@ -23,13 +23,13 @@ export default function Footer() {
             >
               <Github className="h-5 w-5" />
             </Link>
-            {/* <Link
+            <Link
               href="#"
               className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               aria-label="Twitter"
             >
               <Twitter className="h-5 w-5" />
-            </Link> */}
+            </Link>
             <Link
               href="www.linkedin.com/in/dibyajyoti-das-2332a5260"
               className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
